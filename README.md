@@ -236,3 +236,91 @@ for c in range(0, 10, 2):
     print(c)  # Exibe na tela: 0, 2, 4, 6, 8
 ```
 
+## Aula #14 - Estrutura de Repetição while
+
+A aula #14 do Curso em Vídeo introduz o conceito de laços de repetição baseados em testes lógicos através da estrutura `while`. O foco é aprender a criar repetições flexíveis, ideais para cenários onde o número exato de iterações é desconhecido no momento da escrita do código.
+
+### Palavras-Chave e Estruturas Novas:
+* **`while <condição>:`**: Declaração do laço de repetição condicional. Executa o bloco de código indentado repetidamente enquanto a `<condição>` testada retornar verdadeira (`True`).
+
+### Conceitos Práticos e Lógicos:
+* **Laço com Teste Lógico:** Ao contrário do `for` (que atua sobre um intervalo ou sequência predefinida), o `while` testa uma condição a cada início de iteração para decidir se continua ou interrompe o fluxo.
+* **Flag (Ponto de Parada / Sentinela):** Estratégia de utilizar um valor específico inserido pelo usuário ou calculado pelo sistema para sinalizar o fim da repetição (ex: manter o laço rodando até que o usuário digite o número `0`).
+* **Loop Infinito:** Situação que ocorre quando a condição lógica do `while` nunca é atualizada para falsa (`False`) dentro do escopo do laço, fazendo com que o programa execute indefinidamente até ser interrompido externamente.
+
+# Exemplo de uso
+
+Executa repetidamente até que o usuário insira a Flag de parada
+```python
+resposta = ''
+while resposta != 'S':
+    resposta = str(input('Deseja encerrar o programa? [S/N]: ')).upper().strip()
+
+print('Programa finalizado com sucesso.')
+```
+
+## Aula #15 - Interrompendo repetições while
+
+A aula #15 encerra o **Mundo 2** e ensina como interromper loops de forma abrupta utilizando estruturas de repetição infinitas. Além disso, introduz a forma mais moderna e utilizada de formatação de strings no Python atual.
+
+### Palavras-Chave e Comandos Novos:
+* **`while True:`**: Cria um laço de repetição infinito que rodará continuamente até encontrar uma instrução de interrupção explícita no código.
+* **`break`**: Comando de interrupção imediata. Quando executado, ele "quebra" o laço de repetição atual (seja `while` ou `for`) e joga o fluxo do programa para a primeira linha logo após o bloco do laço.
+* **`f-strings` (Interpolação de Strings)**: Recurso moderno (Python 3.6+) que substitui o método `.format()`. Permite colocar as variáveis diretamente dentro da string adicionando o prefixo `f` antes das aspas.
+
+### Exemplo de uso:
+```python
+soma = 0
+while True:
+    num = int(input('Digite um número (999 para parar): '))
+    if num == 999:
+        break  # O número 999 não entra na soma, o laço para aqui
+    soma += num
+
+# Uso da f-string com máscara de formatação de casas decimais integrada
+print(f'A soma total dos valores digitados foi {soma}.')
+print(f'Exemplo de formatação monetária: R${soma:.2f}')
+```
+
+## Aula #16 - Tuplas (Variáveis Compostas)
+
+A aula #16 inicia o **Mundo 3** e introduz o conceito de Variáveis Compostas, começando pelas **Tuplas**. O foco é aprender a gerenciar coleções de dados que permitem armazenar múltiplos valores em uma única variável, respeitando a estrutura de indexação.
+
+### Características Fundamentais:
+* **Imutabilidade:** Regra de ouro da aula — *"As tuplas são imutáveis"*. Uma vez que a tupla é criada, o programa não pode alterar, adicionar ou remover nenhum elemento dela até que a execução termine.
+* **Sintaxe e Flexibilidade:** Identificada historicamente pelo uso de parênteses `()`. Aceitam dados de tipos primitivos misturados dentro da mesma estrutura.
+
+### Novos Comandos e Métodos:
+* **`enumerate()`**: Retorna simultaneamente o índice (posição) e o valor de cada elemento da tupla a cada iteração do laço.
+* **`sorted()`**: Organiza os elementos para exibição (ordem alfabética ou numérica), gerando uma nova estrutura sem alterar a tupla original.
+* **`.index('x')`**: Busca o elemento `'x'` e retorna a sua primeira posição de índice encontrada.
+* **`.index('x', pos)`**: Realiza a busca pelo elemento `'x'`, mas inicia o rastreio a partir da posição `pos` informada (útil para ignorar ocorrências anteriores).
+* **`del()`**: Apaga uma variável inteira diretamente da memória do sistema.
+
+### Comportamento de Operadores Existentes:
+* **Adição de Tuplas (`+`)**: Realiza uma **concatenação** (junção), unindo os elementos de duas ou mais tuplas em uma nova estrutura, respeitando a ordem declarada.
+
+### Exemplos Práticos de Sintaxe:
+
+```python
+# 1. Criando uma tupla e a regra de imutabilidade
+lanche = ('Hambúrguer', 'Suco', 'Pizza', 'Pudim')
+# lanche[1] = 'Refrigerante'  # ❌ Se desentalar, gera erro: 'tuple' object does not support item assignment
+
+# 2. Utilizando sorted() e enumerate()
+# sorted() exibe em ordem alfabética: ('Hambúrguer', 'Pizza', 'Pudim', 'Suco')
+for posicao, comida in enumerate(sorted(lanche)):
+    print(f'Vou comer {comida} na posição {posicao}')
+
+# 3. Operador + e o método .index()
+a = (2, 5, 4)
+b = (5, 8, 1, 2)
+c = a + b  # Gera uma nova tupla: (2, 5, 4, 5, 8, 1, 2)
+
+print(c.index(5))     # Retorna 1 (índice da primeira ocorrência do número 5)
+print(c.index(5, 2))  # Retorna 3 (busca o número 5 começando a partir da posição 2)
+
+# 4. Deletando da memória
+del(lanche)
+# print(lanche)  # ❌ Gera erro NameError porque a variável deixou de existir
+```
