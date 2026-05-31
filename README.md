@@ -13,7 +13,7 @@ A aula #04 do Curso em Vídeo marca o início prático no Python 3, ensinando co
 * **`+`**: Operador de adição (para números) ou concatenação (para textos).
 * **`,`**: Separador de argumentos dentro do `print()`.
 
-### Exemplos Práticos de Sintaxe:
+### Exemplos de Uso:
 ```python
 # 1. Atribuição de variáveis e entrada de dados
 nome = input('Qual é o seu nome? ')
@@ -30,6 +30,7 @@ print(texto1 + texto2)  # Concatenação de Strings: 'Suporte Técnico'
 num1 = 10
 num2 = 5
 print(num1 + num2)  # Adição Numérica: 15
+```
 
 ## Aula #05 - Instalando o PyCharm e o QPython3
 
@@ -63,7 +64,7 @@ A aula #06 do Curso em Vídeo introduz os conceitos de manipulação de tipos pr
 * **`.isprintable()`**: Verifica se a string possui apenas caracteres visíveis que podem ser impressos na tela (ignora quebras de linha como `\n`).
 
 ## Exemplos de Uso
-
+```python
 # 1. Coerção de Dados (Type Casting) e verificação de tipo
 n1 = int(input('Digite um valor numérico: '))
 n2 = float(input('Digite outro valor numérico: '))
@@ -81,6 +82,7 @@ print('Está totalmente em maiúsculas?', dado.isupper())
 print('Está totalmente em minúsculas?', dado.islower())
 print('É apenas espaço em branco?', dado.isspace())
 print('Pode ser impresso na tela?', dado.isprintable())
+```
 
 
 ## Aula #07 - Operadores Aritméticos
@@ -118,6 +120,7 @@ A aula #07 do Curso em Vídeo detalha como realizar operações matemáticas no 
 
 ## Exemplos de Uso
 
+```python
 # 1. Operadores Matemáticos e Raiz Quadrada
 n = 25
 div_inteira = n // 2
@@ -138,6 +141,7 @@ print('=' * 30)
 # 3. Controle de Fluxo (end e \n)
 print('Este texto não quebra a linha, ', end='')
 print('continua diretamente aqui!\nNova linha criada pelo caractere de escape.')
+```
 
 ## Aula #08 - Utilizando Módulos
 
@@ -199,6 +203,9 @@ A aula #09 do Curso em Vídeo ensina como realizar operações avançadas com st
 ### Recurso Extra de Impressão:
 * **Aspas Triplas (`"""..."""`)**: Permite realizar a impressão de blocos longos de textos ou textos com múltiplas linhas de forma direta no código, mantendo a formatação e as quebras de linha originais sem a necessidade de usar múltiplos modificadores `\n`.
 
+## Exemplos de Uso
+
+```python
 texto = '  Curso em Vídeo Python  '
 
 # 1. Exemplos de Fatiamento (Slicing)
@@ -231,6 +238,7 @@ print('Unido com traço:', '-'.join(palavras))
 print("""Este é um grande bloco de texto.
 Mantém a quebra de linha exatamente onde foi inserida no editor,
 facilitando a documentação e criação de menus explicativos.""")
+```
 
 ## Aula #10 - Condições (Parte 1)
 
@@ -240,7 +248,7 @@ A aula #10 do Curso em Vídeo introduz o conceito de estruturas de controle, esp
 * **`if <condição>:`**: Estrutura condicional simples. Bloco de código que só será executado se o resultado do teste lógico for verdadeiro (`True`).
 * **`else:`**: Complemento para estrutura condicional composta. Define o bloco de código alternativo que será executado caso a condição do `if` seja falsa (`False`).
 
-### Conceitos Estruturais e Novidades:
+### Conceitos Estruturais
 
 #### Indentação de Blocos (Alinhamento)
 Diferente de outras linguagens que usam chaves `{}`, o Python utiliza estritamente o alinhamento de espaços (geralmente 4 espaços ou 1 Tab) para determinar quais linhas pertencem a qual bloco de execução (bloco `True` ou bloco `False`).
@@ -253,7 +261,7 @@ Forma compacta de escrever uma estrutura condicional composta em uma única linh
 * **Exemplo de Sintaxe:** `print('Novo' if tempo <= 3 else 'Velho')`
 
 ## Exemplos de Uso 
-
+```python
 # 1. Condicional Composta padrão (Com indentação rígida)
 tempo = int(input('Quantos anos tem seu carro? '))
 if tempo <= 3:
@@ -269,7 +277,7 @@ print('--- Fim do fluxo condicional (Texto executado sequencialmente) ---')
 print('Carro Novo' if tempo <= 3 else 'Carro Velho')
 ```
 
-## Aula #11 - Cores no Terminal
+### Aula #11 - Cores no Terminal
 
 A aula #11 do Curso em Vídeo ensina como customizar a saída visual de dados no terminal utilizando o padrão de códigos de escape ANSI. O conteúdo foca em como modificar o estilo da fonte, a cor do texto e a cor de fundo diretamente dentro de strings.
 
@@ -284,7 +292,7 @@ A aula #11 do Curso em Vídeo ensina como customizar a saída visual de dados no
 * **`4`**: *Underline* (Texto sublinhado).
 * **`7`**: *Negative* (Inverte as cores escolhidas, transformando a cor do texto em fundo e vice-versa).
 
-### Parâmetros de Cores do Texto (Text):
+## Parâmetros de Cores do Texto (Text):
 * **`30`**: Branco / Cinza claro
 * **`31`**: Vermelho
 * **`32`**: Verde
@@ -294,7 +302,7 @@ A aula #11 do Curso em Vídeo ensina como customizar a saída visual de dados no
 * **`36`**: Ciano
 * **`37`**: Cinza escuro / Branco do sistema
 
-### Parâmetros de Cores de Fundo (Back):
+## Parâmetros de Cores de Fundo (Back):
 * **`40`** até **`47`**: Seguem exatamente a mesma ordem cromática das cores de texto (30 a 37), mas aplicam o preenchimento ao plano de fundo do caractere.
 
 ## Exemplos de Uso 
@@ -376,8 +384,8 @@ A aula #14 do Curso em Vídeo introduz o conceito de laços de repetição basea
 
 # Exemplo de uso
 
-Executa repetidamente até que o usuário insira a Flag de parada
 ```python
+Executa repetidamente até que o usuário insira a Flag de parada
 resposta = ''
 while resposta != 'S':
     resposta = str(input('Deseja encerrar o programa? [S/N]: ')).upper().strip()
@@ -394,7 +402,7 @@ A aula #15 encerra o **Mundo 2** e ensina como interromper loops de forma abrupt
 * **`break`**: Comando de interrupção imediata. Quando executado, ele "quebra" o laço de repetição atual (seja `while` ou `for`) e joga o fluxo do programa para a primeira linha logo após o bloco do laço.
 * **`f-strings` (Interpolação de Strings)**: Recurso moderno (Python 3.6+) que substitui o método `.format()`. Permite colocar as variáveis diretamente dentro da string adicionando o prefixo `f` antes das aspas.
 
-### Exemplo de uso:
+## Exemplo de uso:
 ```python
 soma = 0
 while True:
@@ -426,8 +434,7 @@ A aula #16 inicia o **Mundo 3** e introduz o conceito de Variáveis Compostas, c
 ### Comportamento de Operadores Existentes:
 * **Adição de Tuplas (`+`)**: Realiza uma **concatenação** (junção), unindo os elementos de duas ou mais tuplas em uma nova estrutura, respeitando a ordem declarada.
 
-### Exemplos Práticos de Sintaxe:
-
+## Exemplos de Uso:
 ```python
 # 1. Criando uma tupla e a regra de imutabilidade
 lanche = ('Hambúrguer', 'Suco', 'Pizza', 'Pudim')
@@ -504,6 +511,7 @@ lista_link[0] = 9     # Altera AMBAS as listas!
 # Forma correta (Cria cópia independente):
 lista_copia = lista_original[:]
 lista_copia[0] = 4    # Altera apenas a 'lista_copia'
+```
 
 ## Aula #18 - Listas (Parte 2)
 
@@ -544,3 +552,4 @@ for c in range(0, 3):
     dado.clear()           # Limpa a estrutura temporária para a próxima iteração
 
 print(galera)
+```
