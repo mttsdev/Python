@@ -1,7 +1,7 @@
 # Python
 Curso de Python do Curso em Vídeo
-Repositório mostrando como fui desenvolvendo Python. Para uma busca melhor nas aulas, use Ctrl + F e digite algo do tipo "aula 01".
-
+Repositório mostrando como fui desenvolvendo Python. 
+**Para uma busca melhor nas aulas, use Ctrl + F e digite algo do tipo "aula 01".**
 ## Aula #04 - Primeiros Comandos em Python 3
 
 A aula 04 do Curso em Vídeo marca o início prático no Python 3, ensinando como interagir com o computador através de scripts reais.
