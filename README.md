@@ -324,3 +324,97 @@ print(c.index(5, 2))  # Retorna 3 (busca o número 5 começando a partir da posi
 del(lanche)
 # print(lanche)  # ❌ Gera erro NameError porque a variável deixou de existir
 ```
+
+## Aula #17 - Listas (Parte 1)
+
+A aula #17 introduz a segunda estrutura de variável composta: as **Listas**. Diferente das tuplas, as listas são a ferramenta ideal para armazenar coleções de dados dinâmicas, pois são totalmente mutáveis e expansíveis.
+
+### Características Fundamentais:
+* **Mutabilidade:** Regra de ouro da aula — *"As listas são mutáveis"*. É possível alterar, adicionar ou remover qualquer elemento da estrutura a qualquer momento da execução.
+* **Sintaxe:** Identificada pelo uso de colchetes `[]` ou através da função construtora `list()`.
+
+### Novos Comandos e Métodos:
+* **`.append(item)`**: Adiciona dinamicamente um novo elemento ao final da lista (aumentando o tamanho da estrutura automaticamente).
+* **`.insert(pos, item)`**: Inserts um novo elemento em uma posição de índice específica (`pos`), deslocando todos os elementos seguintes para a direita.
+* **`del lista[índice]`**: Remove um elemento da lista baseado na sua posição de índice.
+* **`.pop(índice)`**: Remove um elemento baseado no índice. Se chamado sem argumentos (`.pop()`), remove automaticamente o último elemento da lista.
+* **`.remove(valor)`**: Remove um elemento baseado no seu conteúdo/valor real (elimina apenas a primeira ocorrência encontrada da esquerda para a direita).
+* **`.sort()`**: Organiza todos os elementos da lista em ordem crescente (alfabética ou numérica) diretamente na estrutura original (*in-place*).
+* **`.sort(reverse=True)`**: Organiza todos os elementos da lista diretamente em ordem decrescente.
+
+### Peculiaridades do Python (Ligação vs Cópia):
+* **Ligação (`b = a`)**: No Python, se você igualar uma lista à outra, o sistema cria uma **ligação** (referência) entre elas. Qualquer alteração feita na lista `b` modificará automaticamente a lista `a`.
+* **Cópia (`b = a[:]`)**: Para duplicar os dados de uma lista criando uma estrutura totalmente independente na memória, utiliza-se o fatiamento completo `[:]`.
+
+### Exemplos Práticos de Sintaxe:
+
+```python
+# 1. Criando e modificando elementos (Mutabilidade)
+num = [2, 5, 9, 1]
+num[2] = 3  # Substitui o valor do índice 2 (muda de 9 para 3)
+
+# 2. Inserindo novos elementos
+num.append(7)         # Lista vira: [2, 5, 3, 1, 7]
+num.insert(1, 0)      # Insere o 0 na posição 1. Lista vira: [2, 0, 5, 3, 1, 7]
+
+# 3. Removendo elementos com segurança
+num.pop()             # Remove o último (7). Lista vira: [2, 0, 5, 3, 1]
+num.pop(1)            # Remove o elemento da posição 1 (0). Lista vira: [2, 5, 3, 1]
+
+if 5 in num:
+    num.remove(5)     # Remove o valor 5. Lista vira: [2, 3, 1]
+
+# 4. Ordenação de dados
+num.sort()            # Organiza em ordem crescente: [1, 2, 3]
+num.sort(reverse=True) # Organiza em ordem decrescente: [3, 2, 1]
+
+# 5. Comportamento de Cópia vs Ligação
+lista_original = [8, 2, 5]
+
+# Forma errada (Cria ligação):
+lista_link = lista_original
+lista_link[0] = 9     # Altera AMBAS as listas!
+
+# Forma correta (Cria cópia independente):
+lista_copia = lista_original[:]
+lista_copia[0] = 4    # Altera apenas a 'lista_copia'
+
+## Aula #18 - Listas (Parte 2)
+
+A aula #18 aprofunda o estudo das listas, introduzindo o conceito de **Listas Aninhadas** (listas dentro de listas). A estrutura evolui de uma coleção linear simples para uma organização multidimensional, permitindo modelar matrizes e tabelas complexas de dados.
+
+### Características Fundamentais:
+* **Estruturas Aninhadas:** Elementos de uma lista principal podem ser, por si só, outras listas completas.
+* **Indexação Bidimensional (Dupla):** Para acessar um dado específico dentro de uma lista aninhada, utilizam-se dois pares de colchetes: o primeiro indica a posição da sub-lista na lista principal, e o segundo indica o índice do elemento dentro daquela sub-lista.
+
+### Novos Comandos e Métodos:
+* **`.clear()`**: Limpa completamente todos os elementos de uma lista, deixando-a vazia (`[]`), sem apagar a variável da memória.
+* **Cópia de Escopo Interno (`.append(lista[:])`)**: Ao trabalhar com estruturas aninhadas alimentadas por uma lista temporária, o uso do fatiamento completo `[:]` é **obrigatório** antes de aplicar o `.clear()`. Caso contrário, a lista principal receberá apenas referências vazias.
+
+### Exemplos Práticos de Sintaxe:
+
+```python
+# 1. Declaração direta e Indexação Dupla
+povo = [['Pedro', 25], ['Maria', 19], ['João', 32]]
+
+print(povo[0])       # Exibe a sub-lista inteira: ['Pedro', 25]
+print(povo[1][0])    # Acessa o índice 0 da sub-lista 1: 'Maria'
+print(povo[2][1])    # Acessa o índice 1 da sub-lista 2: 32
+
+# 2. Estrutura de repetição em Listas Compostas
+for pessoa in povo:
+    print(f'{pessoa[0]} tem {pessoa[1]} anos de idade.')
+
+# 3. Alimentando listas compostas dinamicamente (O perigo do .clear())
+galera = list()
+dado = list()
+
+for c in range(0, 3):
+    dado.append(str(input('Nome: ')))
+    dado.append(int(input('Idade: ')))
+    
+    # ❌ galera.append(dado) -> ERRADO: criaria uma ligação. Ao limpar 'dado', 'galera' esvazia.
+    galera.append(dado[:]) #  CORRETO: joga uma cópia dos valores atuais para a lista principal
+    dado.clear()           # Limpa a estrutura temporária para a próxima iteração
+
+print(galera)
