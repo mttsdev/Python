@@ -1,10 +1,10 @@
 # Python
-Curso de Python do Curso em Vídeo  
-Repositório mostrando como fui desenvolvendo Python.
+Curso de Python do Curso em Vídeo
+Repositório mostrando como fui desenvolvendo Python. Para uma busca melhor nas aulas, use Ctrl + F e digite algo do tipo "aula 01".
 
 ## Aula #04 - Primeiros Comandos em Python 3
 
-A aula #04 do Curso em Vídeo marca o início prático no Python 3, ensinando como interagir com o computador através de scripts reais.
+A aula 04 do Curso em Vídeo marca o início prático no Python 3, ensinando como interagir com o computador através de scripts reais.
 
 ### Conteúdo Prático:
 * **`print()`**: Função de saída de dados na tela.
@@ -34,7 +34,7 @@ print(num1 + num2)  # Adição Numérica: 15
 
 ## Aula #05 - Instalando o PyCharm e o QPython3
 
-A aula #05 do Curso em Vídeo é uma aula especial voltada à preparação do ambiente de desenvolvimento. Nela, é explicada a importância da prática por meio de exercícios e como configurar ferramentas para programar tanto no computador quanto no celular.
+A aula 05 do Curso em Vídeo é uma aula especial voltada à preparação do ambiente de desenvolvimento. Nela, é explicada a importância da prática por meio de exercícios e como configurar ferramentas para programar tanto no computador quanto no celular.
 
 ### Ferramentas e Configurações:
 * **PyCharm Community**: Instalação e configuração da IDE (Ambiente de Desenvolvimento Integrado) no Windows, Mac OS e Linux, utilizando o tema *Darcula*.
@@ -44,7 +44,7 @@ A aula #05 do Curso em Vídeo é uma aula especial voltada à preparação do am
 
 ## Aula #06 - Tipos Primitivos e Saída de Dados
 
-A aula #06 do Curso em Vídeo introduz os conceitos de manipulação de tipos primitivos, coerção de dados (*type casting*), formatação moderna de saídas e métodos para validação de strings.
+A aula 06 do Curso em Vídeo introduz os conceitos de manipulação de tipos primitivos, coerção de dados (*type casting*), formatação moderna de saídas e métodos para validação de strings.
 
 ### Conceitos Práticos e Comandos Novidades:
 * **`type()`**: Descobre o tipo primitivo atual de um dado ou variável (ex: retorna `<class 'str'>`).
@@ -63,7 +63,7 @@ A aula #06 do Curso em Vídeo introduz os conceitos de manipulação de tipos pr
 * **`.isspace()`**: Verifica se a string é composta apenas por espaços em branco.
 * **`.isprintable()`**: Verifica se a string possui apenas caracteres visíveis que podem ser impressos na tela (ignora quebras de linha como `\n`).
 
-## Exemplos de Uso
+### Exemplos de Uso
 ```python
 # 1. Coerção de Dados (Type Casting) e verificação de tipo
 n1 = int(input('Digite um valor numérico: '))
@@ -87,7 +87,7 @@ print('Pode ser impresso na tela?', dado.isprintable())
 
 ## Aula #07 - Operadores Aritméticos
 
-A aula #07 do Curso em Vídeo detalha como realizar operações matemáticas no Python, a importância da ordem de precedência e novos truques visuais para formatar dados na saída de tela.
+A aula 07 do Curso em Vídeo detalha como realizar operações matemáticas no Python, a importância da ordem de precedência e novos truques visuais para formatar dados na saída de tela.
 
 ### Operadores Aritméticos:
 * **`+`**: Adição.
@@ -118,7 +118,7 @@ A aula #07 do Curso em Vídeo detalha como realizar operações matemáticas no 
 * **`end=''`**: Parâmetro inserido no fim do `print()` que impede a quebra de linha automática, juntando o resultado ao próximo `print()`.
 * **`\n`**: Caractere especial inserido dentro de strings para forçar uma quebra de linha em qualquer ponto do texto.
 
-## Exemplos de Uso
+### Exemplos de Uso
 
 ```python
 # 1. Operadores Matemáticos e Raiz Quadrada
@@ -145,7 +145,7 @@ print('continua diretamente aqui!\nNova linha criada pelo caractere de escape.')
 
 ## Aula #08 - Utilizando Módulos
 
-A aula #08 do Curso em Vídeo ensina como expandir as capacidades nativas do Python através da importação de módulos (bibliotecas). É apresentado o conceito de inclusão de ferramentas tanto da biblioteca padrão (*built-in*) quanto de pacotes externos.
+A aula 08 do Curso em Vídeo ensina como expandir as capacidades nativas do Python através da importação de módulos (bibliotecas). É apresentado o conceito de inclusão de ferramentas tanto da biblioteca padrão (*built-in*) quanto de pacotes externos.
 
 ### Comandos de Importação:
 * **`import <modulo>`**: Importa todas as funcionalidades de uma biblioteca para o código. Exige o uso do prefixo ao chamar a função (ex: `math.sqrt()`).
@@ -167,7 +167,7 @@ A aula #08 do Curso em Vídeo ensina como expandir as capacidades nativas do Pyt
 ### Conceitos Extras:
 * **PyPI (Python Package Index)**: Repositório público e oficial onde a comunidade Python armazena pacotes e bibliotecas de terceiros (exemplificado na aula com a instalação e importação do módulo externo `emoji`).
 
-## Aula #09 - Manipulando Texto
+## Aula 09 - Manipulando Texto
 
 A aula #09 do Curso em Vídeo ensina como realizar operações avançadas com strings (cadeias de caracteres). São abordados conceitos de fatiamento de texto, análise, transformação, divisão e junção de strings.
 
@@ -203,7 +203,7 @@ A aula #09 do Curso em Vídeo ensina como realizar operações avançadas com st
 ### Recurso Extra de Impressão:
 * **Aspas Triplas (`"""..."""`)**: Permite realizar a impressão de blocos longos de textos ou textos com múltiplas linhas de forma direta no código, mantendo a formatação e as quebras de linha originais sem a necessidade de usar múltiplos modificadores `\n`.
 
-## Exemplos de Uso
+### Exemplos de Uso
 
 ```python
 texto = '  Curso em Vídeo Python  '
@@ -242,7 +242,7 @@ facilitando a documentação e criação de menus explicativos.""")
 
 ## Aula #10 - Condições (Parte 1)
 
-A aula #10 do Curso em Vídeo introduz o conceito de estruturas de controle, especificamente as estruturas condicionais simples e compostas. O foco está no desvio de fluxo de execução do código baseado em testes lógicos e na importância vital da indentação no Python.
+A aula 10 do Curso em Vídeo introduz o conceito de estruturas de controle, especificamente as estruturas condicionais simples e compostas. O foco está no desvio de fluxo de execução do código baseado em testes lógicos e na importância vital da indentação no Python.
 
 ### Estruturas de Controle e Palavras-Chave:
 * **`if <condição>:`**: Estrutura condicional simples. Bloco de código que só será executado se o resultado do teste lógico for verdadeiro (`True`).
@@ -260,7 +260,7 @@ Diferente de outras linguagens que usam chaves `{}`, o Python utiliza estritamen
 Forma compacta de escrever uma estrutura condicional composta em uma única linha, útil para atribuições rápidas ou exibições diretas.
 * **Exemplo de Sintaxe:** `print('Novo' if tempo <= 3 else 'Velho')`
 
-## Exemplos de Uso 
+### Exemplos de Uso 
 ```python
 # 1. Condicional Composta padrão (Com indentação rígida)
 tempo = int(input('Quantos anos tem seu carro? '))
@@ -277,9 +277,9 @@ print('--- Fim do fluxo condicional (Texto executado sequencialmente) ---')
 print('Carro Novo' if tempo <= 3 else 'Carro Velho')
 ```
 
-### Aula #11 - Cores no Terminal
+## Aula #11 - Cores no Terminal
 
-A aula #11 do Curso em Vídeo ensina como customizar a saída visual de dados no terminal utilizando o padrão de códigos de escape ANSI. O conteúdo foca em como modificar o estilo da fonte, a cor do texto e a cor de fundo diretamente dentro de strings.
+A aula 11 do Curso em Vídeo ensina como customizar a saída visual de dados no terminal utilizando o padrão de códigos de escape ANSI. O conteúdo foca em como modificar o estilo da fonte, a cor do texto e a cor de fundo diretamente dentro de strings.
 
 ### Padrão ANSI de Cores (`\033[style;text;backm`):
 * **`\033[`**: Código de escape inicial necessário para abrir a configuração de estilo.
@@ -292,7 +292,7 @@ A aula #11 do Curso em Vídeo ensina como customizar a saída visual de dados no
 * **`4`**: *Underline* (Texto sublinhado).
 * **`7`**: *Negative* (Inverte as cores escolhidas, transformando a cor do texto em fundo e vice-versa).
 
-## Parâmetros de Cores do Texto (Text):
+### Parâmetros de Cores do Texto (Text):
 * **`30`**: Branco / Cinza claro
 * **`31`**: Vermelho
 * **`32`**: Verde
@@ -302,10 +302,10 @@ A aula #11 do Curso em Vídeo ensina como customizar a saída visual de dados no
 * **`36`**: Ciano
 * **`37`**: Cinza escuro / Branco do sistema
 
-## Parâmetros de Cores de Fundo (Back):
+### Parâmetros de Cores de Fundo (Back):
 * **`40`** até **`47`**: Seguem exatamente a mesma ordem cromática das cores de texto (30 a 37), mas aplicam o preenchimento ao plano de fundo do caractere.
 
-## Exemplos de Uso 
+### Exemplos de Uso 
 ```python
 # 1. Aplicação direta com Reset no final
 print('\033[1;31;40mTexto em Negrito, Vermelho com Fundo Preto!\033[m')
@@ -325,7 +325,7 @@ print('{}ERROR 404:{} Falha na conexão com o servidor.'.format(cores['erro'], c
 
 ## Aula #12 - Condições Aninhadas
 
-A aula #12 marca o início do **Mundo 2** e introduz o conceito de estruturas condicionais aninhadas. O foco está em expandir as decisões de caminhos binários (verdadeiro/falso) para cenários com múltiplas possibilidades de escolha, utilizando uma estrutura de "ninho" (uma condição dentro da outra).
+A aula 12 marca o início do **Mundo 2** e introduz o conceito de estruturas condicionais aninhadas. O foco está em expandir as decisões de caminhos binários (verdadeiro/falso) para cenários com múltiplas possibilidades de escolha, utilizando uma estrutura de "ninho" (uma condição dentro da outra).
 
 ### Palavras-Chave e Estruturas Novas:
 * **`elif <condição>:`**: Uma contração de *else if* (senão se). Permite criar desvios condicionais intermediários. Ele só éz testado se o `if` inicial (ou o `elif` anterior) for falso (`False`). 
@@ -336,7 +336,7 @@ A aula #12 marca o início do **Mundo 2** e introduz o conceito de estruturas co
     * Pode conter **nenhum ou infinitos** `elif`, dependendo de quantas opções você precisa testar.
     * Pode terminar com **nenhum ou no máximo um** `else` (para fechar o bloco e capturar qualquer exceção).
 
-## Exemplo de uso
+### Exemplo de uso
 ```python
 opcao = int(input('Escolha uma opção: '))
 
@@ -351,21 +351,20 @@ else:
 
 ## Aula #13 - Estrutura de Repetição for
 
-A aula #13 do Curso em Vídeo introduz o conceito de estruturas de repetição (laços ou *loops*), especificamente o laço com variável de controle `for`. O foco é aprender a automatizar a execução de blocos de código que precisam se repetir por um número pré-determinado de vezes.
+A aula 13 do Curso em Vídeo introduz o conceito de estruturas de repetição (laços ou *loops*), especificamente o laço com variável de controle `for`. O foco é aprender a automatizar a execução de blocos de código que precisam se repetir por um número pré-determinado de vezes.
 
 ### Palavras-Chave e Funções Novas:
 * **`for <variável> in <sequência>:`**: Declaração do laço de repetição. A `<variável>` de controle assume o valor de cada elemento da `<sequência>` a cada iteração.
 * **`range(stop)`**: Função que gera uma sequência numérica iterável. Se passar apenas um argumento, a contagem começa em `0` e vai até `stop - 1`.
 * **`range(start, stop)`**: Gera a sequência numérica iniciando no número `start` e terminando exatamente no número `stop - 1`.
 * **`range(start, stop, step)`**: Gera a sequência de `start` até `stop - 1`, mas pulando os números de acordo com o intervalo definido em `step` (passo).
-
-## Exemplos de Uso:
-```python
 * **Contagem Regressiva:** Para fazer o laço contar de trás para frente, basta utilizar um `step` negativo (ex: `range(6, 0, -1)` faz a contagem de 6 até 1).
 * **Parâmetros Dinâmicos:** Os argumentos de início, fim e passo da função `range()` podem ser definidos dinamicamente utilizando variáveis coletadas do usuário.
 * **Variável Acumuladora (Somatório):** Conceito de criar uma variável antes do laço (geralmente iniciando em `0`) e utilizá-la dentro do escopo do `for` para somar e acumular valores a cada iteração (ex: `soma = soma + n` ou `soma += n`).
 
-Contagem progressiva pulando de 2 em 2 (Início, Fim-1, Passo)
+### Exemplos de Uso:
+```python
+# Contagem progressiva pulando de 2 em 2 (Início, Fim-1, Passo)
 for c in range(0, 10, 2):
     print(c)  # Exibe na tela: 0, 2, 4, 6, 8
 ```
@@ -382,10 +381,10 @@ A aula #14 do Curso em Vídeo introduz o conceito de laços de repetição basea
 * **Flag (Ponto de Parada / Sentinela):** Estratégia de utilizar um valor específico inserido pelo usuário ou calculado pelo sistema para sinalizar o fim da repetição (ex: manter o laço rodando até que o usuário digite o número `0`).
 * **Loop Infinito:** Situação que ocorre quando a condição lógica do `while` nunca é atualizada para falsa (`False`) dentro do escopo do laço, fazendo com que o programa execute indefinidamente até ser interrompido externamente.
 
-# Exemplo de uso
+### Exemplo de uso
 
 ```python
-Executa repetidamente até que o usuário insira a Flag de parada
+# Executa repetidamente até que o usuário insira a Flag de parada
 resposta = ''
 while resposta != 'S':
     resposta = str(input('Deseja encerrar o programa? [S/N]: ')).upper().strip()
@@ -402,7 +401,7 @@ A aula #15 encerra o **Mundo 2** e ensina como interromper loops de forma abrupt
 * **`break`**: Comando de interrupção imediata. Quando executado, ele "quebra" o laço de repetição atual (seja `while` ou `for`) e joga o fluxo do programa para a primeira linha logo após o bloco do laço.
 * **`f-strings` (Interpolação de Strings)**: Recurso moderno (Python 3.6+) que substitui o método `.format()`. Permite colocar as variáveis diretamente dentro da string adicionando o prefixo `f` antes das aspas.
 
-## Exemplo de uso:
+### Exemplo de uso:
 ```python
 soma = 0
 while True:
@@ -434,11 +433,11 @@ A aula #16 inicia o **Mundo 3** e introduz o conceito de Variáveis Compostas, c
 ### Comportamento de Operadores Existentes:
 * **Adição de Tuplas (`+`)**: Realiza uma **concatenação** (junção), unindo os elementos de duas ou mais tuplas em uma nova estrutura, respeitando a ordem declarada.
 
-## Exemplos de Uso:
+### Exemplos de Uso:
 ```python
 # 1. Criando uma tupla e a regra de imutabilidade
 lanche = ('Hambúrguer', 'Suco', 'Pizza', 'Pudim')
-# lanche[1] = 'Refrigerante'  # ❌ Se desentalar, gera erro: 'tuple' object does not support item assignment
+lanche[1] = 'Refrigerante'  # ❌ Se desentalar, gera erro: 'tuple' object does not support item assignment
 
 # 2. Utilizando sorted() e enumerate()
 # sorted() exibe em ordem alfabética: ('Hambúrguer', 'Pizza', 'Pudim', 'Suco')
@@ -455,7 +454,7 @@ print(c.index(5, 2))  # Retorna 3 (busca o número 5 começando a partir da posi
 
 # 4. Deletando da memória
 del(lanche)
-# print(lanche)  # ❌ Gera erro NameError porque a variável deixou de existir
+print(lanche)  # ❌ Gera erro NameError porque a variável deixou de existir
 ```
 
 ## Aula #17 - Listas (Parte 1)
@@ -479,7 +478,7 @@ A aula #17 introduz a segunda estrutura de variável composta: as **Listas**. Di
 * **Ligação (`b = a`)**: No Python, se você igualar uma lista à outra, o sistema cria uma **ligação** (referência) entre elas. Qualquer alteração feita na lista `b` modificará automaticamente a lista `a`.
 * **Cópia (`b = a[:]`)**: Para duplicar os dados de uma lista criando uma estrutura totalmente independente na memória, utiliza-se o fatiamento completo `[:]`.
 
-### Exemplos Práticos de Sintaxe:
+### Exemplos de Uso:
 
 ```python
 # 1. Criando e modificando elementos (Mutabilidade)
@@ -547,8 +546,8 @@ for c in range(0, 3):
     dado.append(str(input('Nome: ')))
     dado.append(int(input('Idade: ')))
     
-    # ❌ galera.append(dado) -> ERRADO: criaria uma ligação. Ao limpar 'dado', 'galera' esvazia.
-    galera.append(dado[:]) #  CORRETO: joga uma cópia dos valores atuais para a lista principal
+    galera.append(dado) # -> ❌ ERRADO: criaria uma ligação. Ao limpar 'dado', 'galera' esvazia.
+    galera.append(dado[:]) # ✅ CORRETO: joga uma cópia dos valores atuais para a lista principal
     dado.clear()           # Limpa a estrutura temporária para a próxima iteração
 
 print(galera)
