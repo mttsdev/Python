@@ -209,7 +209,7 @@ if opcao == 1:
 elif opcao == 2:
     print('Acessando o laboratório de redes...')
 else:
-    print('Opção inválida!')
+    print('Opção inválida!')```
 
 
 ## Aula #13 - Estrutura de Repetição for
@@ -227,9 +227,9 @@ A aula #13 do Curso em Vídeo introduz o conceito de estruturas de repetição (
 * **Parâmetros Dinâmicos:** Os argumentos de início, fim e passo da função `range()` podem ser definidos dinamicamente utilizando variáveis coletadas do usuário.
 * **Variável Acumuladora (Somatório):** Conceito de criar uma variável antes do laço (geralmente iniciando em `0`) e utilizá-la dentro do escopo do `for` para somar e acumular valores a cada iteração (ex: `soma = soma + n` ou `soma += n`).
 
-# Exemplo de uso
+```# Exemplo de uso
 
 Contagem progressiva pulando de 2 em 2 (Início, Fim-1, Passo)
 for c in range(0, 10, 2):
-    print(c)  # Exibe na tela: 0, 2, 4, 6, 8
+    print(c)  # Exibe na tela: 0, 2, 4, 6, 8```
 
