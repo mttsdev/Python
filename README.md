@@ -371,7 +371,7 @@ for c in range(0, 10, 2):
 
 ## Aula #14 - Estrutura de Repetição while
 
-A aula #14 do Curso em Vídeo introduz o conceito de laços de repetição baseados em testes lógicos através da estrutura `while`. O foco é aprender a criar repetições flexíveis, ideais para cenários onde o número exato de iterações é desconhecido no momento da escrita do código.
+A aula 14 do Curso em Vídeo introduz o conceito de laços de repetição baseados em testes lógicos através da estrutura `while`. O foco é aprender a criar repetições flexíveis, ideais para cenários onde o número exato de iterações é desconhecido no momento da escrita do código.
 
 ### Palavras-Chave e Estruturas Novas:
 * **`while <condição>:`**: Declaração do laço de repetição condicional. Executa o bloco de código indentado repetidamente enquanto a `<condição>` testada retornar verdadeira (`True`).
@@ -394,7 +394,7 @@ print('Programa finalizado com sucesso.')
 
 ## Aula #15 - Interrompendo repetições while
 
-A aula #15 encerra o **Mundo 2** e ensina como interromper loops de forma abrupta utilizando estruturas de repetição infinitas. Além disso, introduz a forma mais moderna e utilizada de formatação de strings no Python atual.
+A aula 15 encerra o **Mundo 2** e ensina como interromper loops de forma abrupta utilizando estruturas de repetição infinitas. Além disso, introduz a forma mais moderna e utilizada de formatação de strings no Python atual.
 
 ### Palavras-Chave e Comandos Novos:
 * **`while True:`**: Cria um laço de repetição infinito que rodará continuamente até encontrar uma instrução de interrupção explícita no código.
@@ -417,7 +417,7 @@ print(f'Exemplo de formatação monetária: R${soma:.2f}')
 
 ## Aula #16 - Tuplas (Variáveis Compostas)
 
-A aula #16 inicia o **Mundo 3** e introduz o conceito de Variáveis Compostas, começando pelas **Tuplas**. O foco é aprender a gerenciar coleções de dados que permitem armazenar múltiplos valores em uma única variável, respeitando a estrutura de indexação.
+A aula 16 inicia o **Mundo 3** e introduz o conceito de Variáveis Compostas, começando pelas **Tuplas**. O foco é aprender a gerenciar coleções de dados que permitem armazenar múltiplos valores em uma única variável, respeitando a estrutura de indexação.
 
 ### Características Fundamentais:
 * **Imutabilidade:** Regra de ouro da aula — *"As tuplas são imutáveis"*. Uma vez que a tupla é criada, o programa não pode alterar, adicionar ou remover nenhum elemento dela até que a execução termine.
@@ -459,7 +459,7 @@ print(lanche)  # ❌ Gera erro NameError porque a variável deixou de existir
 
 ## Aula #17 - Listas (Parte 1)
 
-A aula #17 introduz a segunda estrutura de variável composta: as **Listas**. Diferente das tuplas, as listas são a ferramenta ideal para armazenar coleções de dados dinâmicas, pois são totalmente mutáveis e expansíveis.
+A aula 17 introduz a segunda estrutura de variável composta: as **Listas**. Diferente das tuplas, as listas são a ferramenta ideal para armazenar coleções de dados dinâmicas, pois são totalmente mutáveis e expansíveis.
 
 ### Características Fundamentais:
 * **Mutabilidade:** Regra de ouro da aula — *"As listas são mutáveis"*. É possível alterar, adicionar ou remover qualquer elemento da estrutura a qualquer momento da execução.
@@ -514,7 +514,7 @@ lista_copia[0] = 4    # Altera apenas a 'lista_copia'
 
 ## Aula #18 - Listas (Parte 2)
 
-A aula #18 aprofunda o estudo das listas, introduzindo o conceito de **Listas Aninhadas** (listas dentro de listas). A estrutura evolui de uma coleção linear simples para uma organização multidimensional, permitindo modelar matrizes e tabelas complexas de dados.
+A aula 18 aprofunda o estudo das listas, introduzindo o conceito de **Listas Aninhadas** (listas dentro de listas). A estrutura evolui de uma coleção linear simples para uma organização multidimensional, permitindo modelar matrizes e tabelas complexas de dados.
 
 ### Características Fundamentais:
 * **Estruturas Aninhadas:** Elementos de uma lista principal podem ser, por si só, outras listas completas.
