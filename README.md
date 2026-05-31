@@ -197,3 +197,39 @@ A aula #12 marca o início do **Mundo 2** e introduz o conceito de estruturas co
 * **Regras de Construção:** * Todo bloco condicional começa obrigatoriamente com **um** único `if`.
     * Pode conter **nenhum ou infinitos** `elif`, dependendo de quantas opções você precisa testar.
     * Pode terminar com **nenhum ou no máximo um** `else` (para fechar o bloco e capturar qualquer exceção).
+
+## Exemplo de uso
+
+### Condicionais Aninhadas (`if`, `elif`, `else`)
+```python
+opcao = int(input('Escolha uma opção: '))
+
+if opcao == 1:
+    print('Acessando o menu de suporte técnico...')
+elif opcao == 2:
+    print('Acessando o laboratório de redes...')
+else:
+    print('Opção inválida!')
+
+
+## Aula #13 - Estrutura de Repetição for
+
+A aula #13 do Curso em Vídeo introduz o conceito de estruturas de repetição (laços ou *loops*), especificamente o laço com variável de controle `for`. O foco é aprender a automatizar a execução de blocos de código que precisam se repetir por um número pré-determinado de vezes.
+
+### Palavras-Chave e Funções Novas:
+* **`for <variável> in <sequência>:`**: Declaração do laço de repetição. A `<variável>` de controle assume o valor de cada elemento da `<sequência>` a cada iteração.
+* **`range(stop)`**: Função que gera uma sequência numérica iterável. Se passar apenas um argumento, a contagem começa em `0` e vai até `stop - 1`.
+* **`range(start, stop)`**: Gera a sequência numérica iniciando no número `start` e terminando exatamente no número `stop - 1`.
+* **`range(start, stop, step)`**: Gera a sequência de `start` até `stop - 1`, mas pulando os números de acordo com o intervalo definido em `step` (passo).
+
+### Conceitos Práticos e Lógicos:
+* **Contagem Regressiva:** Para fazer o laço contar de trás para frente, basta utilizar um `step` negativo (ex: `range(6, 0, -1)` faz a contagem de 6 até 1).
+* **Parâmetros Dinâmicos:** Os argumentos de início, fim e passo da função `range()` podem ser definidos dinamicamente utilizando variáveis coletadas do usuário.
+* **Variável Acumuladora (Somatório):** Conceito de criar uma variável antes do laço (geralmente iniciando em `0`) e utilizá-la dentro do escopo do `for` para somar e acumular valores a cada iteração (ex: `soma = soma + n` ou `soma += n`).
+
+# Exemplo de uso
+
+Contagem progressiva pulando de 2 em 2 (Início, Fim-1, Passo)
+for c in range(0, 10, 2):
+    print(c)  # Exibe na tela: 0, 2, 4, 6, 8
+
