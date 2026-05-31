@@ -13,6 +13,24 @@ A aula #04 do Curso em Vídeo marca o início prático no Python 3, ensinando co
 * **`+`**: Operador de adição (para números) ou concatenação (para textos).
 * **`,`**: Separador de argumentos dentro do `print()`.
 
+### Exemplos Práticos de Sintaxe:
+```python
+# 1. Atribuição de variáveis e entrada de dados
+nome = input('Qual é o seu nome? ')
+idade = input('Qual é a sua idade? ')
+
+# 2. Saída de dados utilizando o separador vírgula
+print('Usuário cadastrado:', nome, 'com idade:', idade)
+
+# 3. Diferença entre Adição e Concatenação
+texto1 = 'Suporte '
+texto2 = 'Técnico'
+print(texto1 + texto2)  # Concatenação de Strings: 'Suporte Técnico'
+
+num1 = 10
+num2 = 5
+print(num1 + num2)  # Adição Numérica: 15
+
 ## Aula #05 - Instalando o PyCharm e o QPython3
 
 A aula #05 do Curso em Vídeo é uma aula especial voltada à preparação do ambiente de desenvolvimento. Nela, é explicada a importância da prática por meio de exercícios e como configurar ferramentas para programar tanto no computador quanto no celular.
@@ -43,6 +61,27 @@ A aula #06 do Curso em Vídeo introduz os conceitos de manipulação de tipos pr
 * **`.islower()`**: Verifica se todas as letras da string estão em minúsculas.
 * **`.isspace()`**: Verifica se a string é composta apenas por espaços em branco.
 * **`.isprintable()`**: Verifica se a string possui apenas caracteres visíveis que podem ser impressos na tela (ignora quebras de linha como `\n`).
+
+## Exemplos de Uso
+
+# 1. Coerção de Dados (Type Casting) e verificação de tipo
+n1 = int(input('Digite um valor numérico: '))
+n2 = float(input('Digite outro valor numérico: '))
+soma = n1 + n2
+
+print(type(soma))  # Exibe: <class 'float'>
+print('A soma entre {} e {} vale {}'.format(n1, n2, soma))  # Uso do .format()
+
+# 2. Métodos de Validação de String
+dado = input('Digite algo para validação técnica: ')
+print('É numérico?', dado.isnumeric())
+print('É alfabético?', dado.isalpha())
+print('É alfanumérico?', dado.isalnum())
+print('Está totalmente em maiúsculas?', dado.isupper())
+print('Está totalmente em minúsculas?', dado.islower())
+print('É apenas espaço em branco?', dado.isspace())
+print('Pode ser impresso na tela?', dado.isprintable())
+
 
 ## Aula #07 - Operadores Aritméticos
 
@@ -76,6 +115,29 @@ A aula #07 do Curso em Vídeo detalha como realizar operações matemáticas no 
 ### Controle de Fluxo de Impressão:
 * **`end=''`**: Parâmetro inserido no fim do `print()` que impede a quebra de linha automática, juntando o resultado ao próximo `print()`.
 * **`\n`**: Caractere especial inserido dentro de strings para forçar uma quebra de linha em qualquer ponto do texto.
+
+## Exemplos de Uso
+
+# 1. Operadores Matemáticos e Raiz Quadrada
+n = 25
+div_inteira = n // 2
+resto = n % 2
+potencia = n ** 2
+raiz = n ** (1/2)
+
+print('Divisão Inteira: {} | Resto: {}'.format(div_inteira, resto))
+print('Usando pow():', pow(n, 2))
+
+# 2. Modificadores de Formatação e Replicação de Strings
+print('=' * 30)
+print('Formatado com 2 casas decimais: {:.2f}'.format(raiz))
+print('Texto alinhado à direita: {:>20}'.format('Segurança'))
+print('Texto centralizado com símbolos: {:=^20}'.format(' SOC '))
+print('=' * 30)
+
+# 3. Controle de Fluxo (end e \n)
+print('Este texto não quebra a linha, ', end='')
+print('continua diretamente aqui!\nNova linha criada pelo caractere de escape.')
 
 ## Aula #08 - Utilizando Módulos
 
@@ -137,6 +199,39 @@ A aula #09 do Curso em Vídeo ensina como realizar operações avançadas com st
 ### Recurso Extra de Impressão:
 * **Aspas Triplas (`"""..."""`)**: Permite realizar a impressão de blocos longos de textos ou textos com múltiplas linhas de forma direta no código, mantendo a formatação e as quebras de linha originais sem a necessidade de usar múltiplos modificadores `\n`.
 
+texto = '  Curso em Vídeo Python  '
+
+# 1. Exemplos de Fatiamento (Slicing)
+print(texto[2])        # 'C' (Removeu os espaços da contagem aqui)
+print(texto[2:10])     # 'Curso em'
+print(texto[2:15:2])   # 'CromVé' (Pulando de 2 em 2)
+print(texto[:9])       # '  Curso e'
+print(texto[15:])      # 'deo Python  '
+
+# 2. Análise e Limpeza de espaços (Strip)
+texto_limpo = texto.strip()
+print('Tamanho real:', len(texto_limpo))
+print("Contagem de letras 'o':", texto_limpo.count('o'))
+print("Onde começa 'Vídeo':", texto_limpo.find('Vídeo'))
+print("'Python' está presente?", 'Python' in texto_limpo)
+
+# 3. Transformações de texto
+print(texto_limpo.replace('Python', 'Android'))
+print(texto_limpo.upper())
+print(texto_limpo.lower())
+print(texto_limpo.capitalize())
+print(texto_limpo.title())
+
+# 4. Divisão e Junção
+palavras = texto_limpo.split() # Gera uma lista: ['Curso', 'em', 'Vídeo', 'Python']
+print('Palavra no índice 3:', palavras[3]) # 'Python'
+print('Unido com traço:', '-'.join(palavras))
+
+# 5. Impressão em Bloco (Aspas Triplas)
+print("""Este é um grande bloco de texto.
+Mantém a quebra de linha exatamente onde foi inserida no editor,
+facilitando a documentação e criação de menus explicativos.""")
+
 ## Aula #10 - Condições (Parte 1)
 
 A aula #10 do Curso em Vídeo introduz o conceito de estruturas de controle, especificamente as estruturas condicionais simples e compostas. O foco está no desvio de fluxo de execução do código baseado em testes lógicos e na importância vital da indentação no Python.
@@ -156,6 +251,23 @@ Diferente de outras linguagens que usam chaves `{}`, o Python utiliza estritamen
 #### Condição Simplificada (Operador Ternário)
 Forma compacta de escrever uma estrutura condicional composta em uma única linha, útil para atribuições rápidas ou exibições diretas.
 * **Exemplo de Sintaxe:** `print('Novo' if tempo <= 3 else 'Velho')`
+
+## Exemplos de Uso 
+
+# 1. Condicional Composta padrão (Com indentação rígida)
+tempo = int(input('Quantos anos tem seu carro? '))
+if tempo <= 3:
+    print('Seu carro está novinho!')
+    print('Bloco verdadeiro executado.')
+else:
+    print('Seu carro é considerado velho.')
+    print('Bloco falso executado.')
+
+print('--- Fim do fluxo condicional (Texto executado sequencialmente) ---')
+
+# 2. Condição Simplificada (Operador Ternário)
+print('Carro Novo' if tempo <= 3 else 'Carro Velho')
+```
 
 ## Aula #11 - Cores no Terminal
 
@@ -185,12 +297,30 @@ A aula #11 do Curso em Vídeo ensina como customizar a saída visual de dados no
 ### Parâmetros de Cores de Fundo (Back):
 * **`40`** até **`47`**: Seguem exatamente a mesma ordem cromática das cores de texto (30 a 37), mas aplicam o preenchimento ao plano de fundo do caractere.
 
+## Exemplos de Uso 
+```python
+# 1. Aplicação direta com Reset no final
+print('\033[1;31;40mTexto em Negrito, Vermelho com Fundo Preto!\033[m')
+print('Este texto voltou ao padrão do terminal por causa do escape anterior.')
+
+# 2. Guardando padrões cromáticos em dicionários/variáveis organizadas
+cores = {
+    'limpa': '\033[m',
+    'erro': '\033[1;31m',
+    'sucesso': '\033[1;32m',
+    'alerta': '\033[4;33m'
+}
+
+print('Operação realizada com {}SUCESSO!{} Envio de pacotes concluído.'.format(cores['sucesso'], cores['limpa']))
+print('{}ERROR 404:{} Falha na conexão com o servidor.'.format(cores['erro'], cores['limpa']))
+```
+
 ## Aula #12 - Condições Aninhadas
 
 A aula #12 marca o início do **Mundo 2** e introduz o conceito de estruturas condicionais aninhadas. O foco está em expandir as decisões de caminhos binários (verdadeiro/falso) para cenários com múltiplas possibilidades de escolha, utilizando uma estrutura de "ninho" (uma condição dentro da outra).
 
 ### Palavras-Chave e Estruturas Novas:
-* **`elif <condição>:`**: Uma contração de *else if* (senão se). Permite criar desvios condicionais intermediários. Ele só é testado se o `if` inicial (ou o `elif` anterior) for falso (`False`). 
+* **`elif <condição>:`**: Uma contração de *else if* (senão se). Permite criar desvios condicionais intermediários. Ele só éz testado se o `if` inicial (ou o `elif` anterior) for falso (`False`). 
 
 ### Conceitos Estruturais:
 * **Múltiplas Opções:** Diferente do `else`, que não aceita condições e apenas captura o que sobrou, o `elif` exige um novo teste lógico.
@@ -199,8 +329,6 @@ A aula #12 marca o início do **Mundo 2** e introduz o conceito de estruturas co
     * Pode terminar com **nenhum ou no máximo um** `else` (para fechar o bloco e capturar qualquer exceção).
 
 ## Exemplo de uso
-
-### Condicionais Aninhadas (`if`, `elif`, `else`)
 ```python
 opcao = int(input('Escolha uma opção: '))
 
@@ -223,14 +351,12 @@ A aula #13 do Curso em Vídeo introduz o conceito de estruturas de repetição (
 * **`range(start, stop)`**: Gera a sequência numérica iniciando no número `start` e terminando exatamente no número `stop - 1`.
 * **`range(start, stop, step)`**: Gera a sequência de `start` até `stop - 1`, mas pulando os números de acordo com o intervalo definido em `step` (passo).
 
-### Conceitos Práticos e Lógicos:
+## Exemplos de Uso:
+```python
 * **Contagem Regressiva:** Para fazer o laço contar de trás para frente, basta utilizar um `step` negativo (ex: `range(6, 0, -1)` faz a contagem de 6 até 1).
 * **Parâmetros Dinâmicos:** Os argumentos de início, fim e passo da função `range()` podem ser definidos dinamicamente utilizando variáveis coletadas do usuário.
 * **Variável Acumuladora (Somatório):** Conceito de criar uma variável antes do laço (geralmente iniciando em `0`) e utilizá-la dentro do escopo do `for` para somar e acumular valores a cada iteração (ex: `soma = soma + n` ou `soma += n`).
 
-# Exemplo de uso
-
-```python
 Contagem progressiva pulando de 2 em 2 (Início, Fim-1, Passo)
 for c in range(0, 10, 2):
     print(c)  # Exibe na tela: 0, 2, 4, 6, 8
