@@ -44,3 +44,156 @@ A aula #06 do Curso em Vídeo introduz os conceitos de manipulação de tipos pr
 * **`.isspace()`**: Verifica se a string é composta apenas por espaços em branco.
 * **`.isprintable()`**: Verifica se a string possui apenas caracteres visíveis que podem ser impressos na tela (ignora quebras de linha como `\n`).
 
+## Aula #07 - Operadores Aritméticos
+
+A aula #07 do Curso em Vídeo detalha como realizar operações matemáticas no Python, a importância da ordem de precedência e novos truques visuais para formatar dados na saída de tela.
+
+### Operadores Aritméticos:
+* **`+`**: Adição.
+* **`-`**: Subtração.
+* **`*`**: Multiplicação (também usado para replicação de strings, ex: `'=' * 20`).
+* **`/`**: Divisão (sempre gera um resultado do tipo `float`).
+* **`**`**: Potência ou Exponenciação (também calculada pela função nativa **`pow(x, y)`**).
+* **`//`**: Divisão Inteira (ignora o resto e devolve apenas o quociente inteiro).
+* **`%`**: Resto da Divisão (Módulo).
+
+> **💡 Dica da aula:** Para calcular a raiz quadrada de um número, basta elevá-lo a meio `(de onde vem: num ** (1/2))`.
+
+### Ordem de Precedência:
+1. `()`
+2. `**`
+3. `*`, `/`, `//`, `%` (quem aparecer primeiro, da esquerda para a direita)
+4. `+`, `-`
+
+### Modificadores de Formatação (Injetados nas máscaras `{}`):
+* **`:.2f`**: Limita a exibição de números reais a uma quantidade fixa de casas decimais (neste exemplo, 2 casas decimais).
+* **`{:20}`**: Reserva um espaço fixo de 20 caracteres para o dado.
+* **`{:>20}`**: Alinha o texto à direita dentro do espaço de 20 caracteres.
+* **`{:<20}`**: Alinha o texto à esquerda dentro do espaço de 20 caracteres.
+* **`{:^20}`**: Centraliza o texto dentro do espaço de 20 caracteres.
+* **`{:=^20}`**: Centraliza o texto e preenche os espaços vazios ao redor com o caractere informado (neste caso, `=`).
+
+### Controle de Fluxo de Impressão:
+* **`end=''`**: Parâmetro inserido no fim do `print()` que impede a quebra de linha automática, juntando o resultado ao próximo `print()`.
+* **`\n`**: Caractere especial inserido dentro de strings para forçar uma quebra de linha em qualquer ponto do texto.
+
+## Aula #08 - Utilizando Módulos
+
+A aula #08 do Curso em Vídeo ensina como expandir as capacidades nativas do Python através da importação de módulos (bibliotecas). É apresentado o conceito de inclusão de ferramentas tanto da biblioteca padrão (*built-in*) quanto de pacotes externos.
+
+### Comandos de Importação:
+* **`import <modulo>`**: Importa todas as funcionalidades de uma biblioteca para o código. Exige o uso do prefixo ao chamar a função (ex: `math.sqrt()`).
+* **`from <modulo> import <funcao>`**: Importa apenas uma ou mais ferramentas específicas de uma biblioteca. Otimiza o uso de memória e dispensa o uso do prefixo no código.
+
+### Novas Bibliotecas e Funções Nativas:
+
+#### Módulo `math` (Matemática Avançada)
+* **`sqrt()`**: Calcula a raiz quadrada de um número.
+* **`ceil()`**: Arredonda um número com ponto flutuante para cima (teto).
+* **`floor()`**: Arredonda um número com ponto flutuante para baixo (chão).
+* **`trunc()`**: Elimina a parte decimal de um número, mantendo apenas a parte inteira (trunca o valor).
+* **`factorial()`**: Calcula o fatorial de um número inteiro.
+
+#### Módulo `random` (Geração Aleatória)
+* **`random()`**: Gera um número real (float) aleatório entre 0.0 e 1.0.
+* **`randint(x, y)`**: Gera um número inteiro aleatório dentro de um intervalo fechado entre os valores `x` e `y`.
+
+### Conceitos Extras:
+* **PyPI (Python Package Index)**: Repositório público e oficial onde a comunidade Python armazena pacotes e bibliotecas de terceiros (exemplificado na aula com a instalação e importação do módulo externo `emoji`).
+
+## Aula #09 - Manipulando Texto
+
+A aula #09 do Curso em Vídeo ensina como realizar operações avançadas com strings (cadeias de caracteres). São abordados conceitos de fatiamento de texto, análise, transformação, divisão e junção de strings.
+
+### Fatiamento de Strings (Slicing `[]`):
+* **`frase[x]`**: Seleciona o caractere localizado no índice `x` (lembrando que o índice começa em 0).
+* **`frase[x:y]`**: Extrai uma fatia que vai do índice `x` até o índice `y-1`.
+* **`frase[x:y:z]`**: Extrai do índice `x` até o índice `y-1`, pulando de `z` em `z` caracteres.
+* **`frase[:y]`**: Fatiamento que começa automaticamente do índice `0` e vai até `y-1`.
+* **`frase[x:]`**: Fatiamento que começa no índice `x` e vai até o final da string.
+* **`frase[x::z]`**: Começa no índice `x`, vai até o final da string, pulando de `z` em `z`.
+
+### Análise de String:
+* **`len(frase)`**: Função nativa que retorna o comprimento total (quantidade de caracteres) da string.
+* **`.count('x')`**: Conta quantas vezes o caractere ou sub-string `'x'` aparece na string.
+* **`.count('x', início, fim)`**: Conta a ocorrência de `'x'` aplicando um fatiamento interno do índice `início` até `fim-1`.
+* **`.find('xyz')`**: Procura pela sub-string `'xyz'` e retorna o índice de onde ela se inicia. Caso não exista na string, retorna `-1`.
+* **`'xyz' in frase`**: Operador lógico que verifica a existência da sub-string `'xyz'` dentro da string, retornando `True` ou `False`.
+
+### Transformação de String:
+* **`.replace('antigo', 'novo')`**: Procura pela sub-string `'antigo'` e substitui todas as ocorrências por `'novo'`.
+* **`.upper()`**: Transforma todas as letras da string em maiúsculas.
+* **`.lower()`**: Transforma todas as letras da string em minúsculas.
+* **`.capitalize()`**: Transforma apenas o primeiro caractere da string inteira em maiúsculo, forçando o restante para minúsculo.
+* **`.title()`**: Analisa as quebras de espaços e transforma a primeira letra de cada palavra em maiúscula.
+* **`.strip()`**: Remove os espaços em branco inúteis no início e no fim da string.
+* **`.rstrip()`**: Remove apenas os espaços em branco inúteis do lado direito (fim) da string.
+* **`.lstrip()`**: Remove apenas os espaços em branco inúteis do lado esquerdo (início) da string.
+
+### Divisão e Junção:
+* **`.split()`**: Divide a string em uma lista de palavras, utilizando os espaços em branco como separador padrão (gera uma nova indexação para cada palavra isolada).
+* **`'separador'.join(lista)`**: Junta os elementos de uma lista de strings em uma única string única, utilizando o `'separador'` definido entre eles (ex: `'-'.join(palavras)`).
+
+### Recurso Extra de Impressão:
+* **Aspas Triplas (`"""..."""`)**: Permite realizar a impressão de blocos longos de textos ou textos com múltiplas linhas de forma direta no código, mantendo a formatação e as quebras de linha originais sem a necessidade de usar múltiplos modificadores `\n`.
+
+## Aula #10 - Condições (Parte 1)
+
+A aula #10 do Curso em Vídeo introduz o conceito de estruturas de controle, especificamente as estruturas condicionais simples e compostas. O foco está no desvio de fluxo de execução do código baseado em testes lógicos e na importância vital da indentação no Python.
+
+### Estruturas de Controle e Palavras-Chave:
+* **`if <condição>:`**: Estrutura condicional simples. Bloco de código que só será executado se o resultado do teste lógico for verdadeiro (`True`).
+* **`else:`**: Complemento para estrutura condicional composta. Define o bloco de código alternativo que será executado caso a condição do `if` seja falsa (`False`).
+
+### Conceitos Estruturais e Novidades:
+
+#### Indentação de Blocos (Alinhamento)
+Diferente de outras linguagens que usam chaves `{}`, o Python utiliza estritamente o alinhamento de espaços (geralmente 4 espaços ou 1 Tab) para determinar quais linhas pertencem a qual bloco de execução (bloco `True` ou bloco `False`).
+* **Bloco Verdadeiro:** Linhas indentadas logo abaixo do `if`.
+* **Bloco Falso:** Linhas indentadas logo abaixo do `else`.
+* **Fluxo Sequencial:** Código sem indentação (no início da linha) continua sendo executado normalmente após as condições terminarem.
+
+#### Condição Simplificada (Operador Ternário)
+Forma compacta de escrever uma estrutura condicional composta em uma única linha, útil para atribuições rápidas ou exibições diretas.
+* **Exemplo de Sintaxe:** `print('Novo' if tempo <= 3 else 'Velho')`
+
+## Aula #11 - Cores no Terminal
+
+A aula #11 do Curso em Vídeo ensina como customizar a saída visual de dados no terminal utilizando o padrão de códigos de escape ANSI. O conteúdo foca em como modificar o estilo da fonte, a cor do texto e a cor de fundo diretamente dentro de strings.
+
+### Padrão ANSI de Cores (`\033[style;text;backm`):
+* **`\033[`**: Código de escape inicial necessário para abrir a configuração de estilo.
+* **`m`**: Caractere de fechamento que valida a sequência ANSI.
+* **`\033[m`**: Código de **reset**. Limpa todas as formatações anteriores e impede que a cor configurada "vaze" para as próximas linhas do terminal.
+
+### Parâmetros de Estilo (Style):
+* **`0`**: *None* (Sem estilo/Padrão).
+* **`1`**: *Bold* (Texto em negrito).
+* **`4`**: *Underline* (Texto sublinhado).
+* **`7`**: *Negative* (Inverte as cores escolhidas, transformando a cor do texto em fundo e vice-versa).
+
+### Parâmetros de Cores do Texto (Text):
+* **`30`**: Branco / Cinza claro
+* **`31`**: Vermelho
+* **`32`**: Verde
+* **`33`**: Amarelo
+* **`34`**: Azul
+* **`35`**: Magenta
+* **`36`**: Ciano
+* **`37`**: Cinza escuro / Branco do sistema
+
+### Parâmetros de Cores de Fundo (Back):
+* **`40`** até **`47`**: Seguem exatamente a mesma ordem cromática das cores de texto (30 a 37), mas aplicam o preenchimento ao plano de fundo do caractere.
+
+## Aula #12 - Condições Aninhadas
+
+A aula #12 marca o início do **Mundo 2** e introduz o conceito de estruturas condicionais aninhadas. O foco está em expandir as decisões de caminhos binários (verdadeiro/falso) para cenários com múltiplas possibilidades de escolha, utilizando uma estrutura de "ninho" (uma condição dentro da outra).
+
+### Palavras-Chave e Estruturas Novas:
+* **`elif <condição>:`**: Uma contração de *else if* (senão se). Permite criar desvios condicionais intermediários. Ele só é testado se o `if` inicial (ou o `elif` anterior) for falso (`False`). 
+
+### Conceitos Estruturais:
+* **Múltiplas Opções:** Diferente do `else`, que não aceita condições e apenas captura o que sobrou, o `elif` exige um novo teste lógico.
+* **Regras de Construção:** * Todo bloco condicional começa obrigatoriamente com **um** único `if`.
+    * Pode conter **nenhum ou infinitos** `elif`, dependendo de quantas opções você precisa testar.
+    * Pode terminar com **nenhum ou no máximo um** `else` (para fechar o bloco e capturar qualquer exceção).
