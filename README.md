@@ -3,7 +3,7 @@ Curso de Python do Curso em Vídeo<br>
 Repositório mostrando como fui desenvolvendo Python.<br> 
 ## Sumário 
 * [Aula #04 - Primeiros Comandos em Python 3](#aula-04)
-* [Aula #05 - Instalando o PyCharm e o QPython3] (#aula-05)
+* [Aula #05 - Instalando o PyCharm e o QPython3](#aula-05)
 * [Aula #06 - Tipos Primitivos e Saída de Dados](#aula-06)
 * [Aula #07 - Operadores Aritméticos](#aula-07)
 * [Aula #08 - Utilizando Módulos](#aula-08)
