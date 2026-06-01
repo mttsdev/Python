@@ -1,6 +1,6 @@
 # Python
-Curso de Python do Curso em Vídeo
-Repositório mostrando como fui desenvolvendo Python. 
+Curso de Python do Curso em Vídeo<br>
+Repositório mostrando como fui desenvolvendo Python.<br> 
 **Para uma busca melhor nas aulas, use Ctrl + F e digite algo do tipo "aula 01".**
 ## Aula #04 - Primeiros Comandos em Python 3
 
