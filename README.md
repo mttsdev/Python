@@ -3,6 +3,21 @@ Curso de Python do Curso em Vídeo<br>
 Repositório mostrando como fui desenvolvendo Python.<br> 
 ## Sumário 
 * [Aula #04 - Primeiros Comandos em Python 3](#aula-04)
+* [Aula #05 - Instalando o PyCharm e o QPython3] (#aula-05)
+* [Aula #06 - Tipos Primitivos e Saída de Dados](#aula-06)
+* [Aula #07 - Operadores Aritméticos](#aula-07)
+* [Aula #08 - Utilizando Módulos](#aula-08)
+* [Aula 09 - Manipulando Texto](#aula-09)
+* [Aula #10 - Condições (Parte 1)](#aula-10)
+* [Aula #11 - Cores no Terminal](#aula-11)
+* [Aula #12 - Condições Aninhadas](#aula-12)
+* [Aula #13 - Estrutura de Repetição for](#aula-13)
+* [Aula #14 - Estrutura de Repetição while](#aula-14)
+* [Aula #15 - Interrompendo repetições while](#aula-15)
+* [Aula #16 - Tuplas (Variáveis Compostas)](#aula-16)
+* [Aula #17 - Listas (Parte 1)](#aula-17)
+* [Aula #18 - Listas (Parte 2)](#aula-18)
+
 <a id="aula-04"></a>
 ## Aula #04 - Primeiros Comandos em Python 3
 
@@ -34,6 +49,7 @@ num2 = 5
 print(num1 + num2)  # Adição Numérica: 15
 ```
 
+<a id="aula-05"></a>
 ## Aula #05 - Instalando o PyCharm e o QPython3
 
 A aula 05 do Curso em Vídeo é uma aula especial voltada à preparação do ambiente de desenvolvimento. Nela, é explicada a importância da prática por meio de exercícios e como configurar ferramentas para programar tanto no computador quanto no celular.
@@ -44,6 +60,7 @@ A aula 05 do Curso em Vídeo é uma aula especial voltada à preparação do amb
 * **Criação de Projetos**: Organização de scripts dentro de um único projeto unificado no PyCharm e a importância da extensão `.py` nos arquivos.
 * **Interface da IDE**: Como ajustar o tamanho da fonte (`Settings > Editor > Colors & Fonts`), abrir o console interativo e alternar a execução de arquivos utilizando o menu `Run`.
 
+<a id="aula-06"></a>
 ## Aula #06 - Tipos Primitivos e Saída de Dados
 
 A aula 06 do Curso em Vídeo introduz os conceitos de manipulação de tipos primitivos, coerção de dados (*type casting*), formatação moderna de saídas e métodos para validação de strings.
@@ -86,7 +103,7 @@ print('É apenas espaço em branco?', dado.isspace())
 print('Pode ser impresso na tela?', dado.isprintable())
 ```
 
-
+<a id="aula-07"></a>
 ## Aula #07 - Operadores Aritméticos
 
 A aula 07 do Curso em Vídeo detalha como realizar operações matemáticas no Python, a importância da ordem de precedência e novos truques visuais para formatar dados na saída de tela.
@@ -144,7 +161,7 @@ print('=' * 30)
 print('Este texto não quebra a linha, ', end='')
 print('continua diretamente aqui!\nNova linha criada pelo caractere de escape.')
 ```
-
+<a id="aula-08"></a>
 ## Aula #08 - Utilizando Módulos
 
 A aula 08 do Curso em Vídeo ensina como expandir as capacidades nativas do Python através da importação de módulos (bibliotecas). É apresentado o conceito de inclusão de ferramentas tanto da biblioteca padrão (*built-in*) quanto de pacotes externos.
@@ -169,6 +186,7 @@ A aula 08 do Curso em Vídeo ensina como expandir as capacidades nativas do Pyth
 ### Conceitos Extras:
 * **PyPI (Python Package Index)**: Repositório público e oficial onde a comunidade Python armazena pacotes e bibliotecas de terceiros (exemplificado na aula com a instalação e importação do módulo externo `emoji`).
 
+<a id="aula-09"></a>
 ## Aula 09 - Manipulando Texto
 
 A aula #09 do Curso em Vídeo ensina como realizar operações avançadas com strings (cadeias de caracteres). São abordados conceitos de fatiamento de texto, análise, transformação, divisão e junção de strings.
@@ -242,6 +260,7 @@ Mantém a quebra de linha exatamente onde foi inserida no editor,
 facilitando a documentação e criação de menus explicativos.""")
 ```
 
+<a id="aula-10"></a>
 ## Aula #10 - Condições (Parte 1)
 
 A aula 10 do Curso em Vídeo introduz o conceito de estruturas de controle, especificamente as estruturas condicionais simples e compostas. O foco está no desvio de fluxo de execução do código baseado em testes lógicos e na importância vital da indentação no Python.
@@ -279,6 +298,7 @@ print('--- Fim do fluxo condicional (Texto executado sequencialmente) ---')
 print('Carro Novo' if tempo <= 3 else 'Carro Velho')
 ```
 
+<a id="aula-11"></a>
 ## Aula #11 - Cores no Terminal
 
 A aula 11 do Curso em Vídeo ensina como customizar a saída visual de dados no terminal utilizando o padrão de códigos de escape ANSI. O conteúdo foca em como modificar o estilo da fonte, a cor do texto e a cor de fundo diretamente dentro de strings.
@@ -325,6 +345,7 @@ print('Operação realizada com {}SUCESSO!{} Envio de pacotes concluído.'.forma
 print('{}ERROR 404:{} Falha na conexão com o servidor.'.format(cores['erro'], cores['limpa']))
 ```
 
+<a id="aula-12"></a>
 ## Aula #12 - Condições Aninhadas
 
 A aula 12 marca o início do **Mundo 2** e introduz o conceito de estruturas condicionais aninhadas. O foco está em expandir as decisões de caminhos binários (verdadeiro/falso) para cenários com múltiplas possibilidades de escolha, utilizando uma estrutura de "ninho" (uma condição dentro da outra).
@@ -350,7 +371,7 @@ else:
     print('Opção inválida!')
 ```
 
-
+<a id="aula-13"></a>
 ## Aula #13 - Estrutura de Repetição for
 
 A aula 13 do Curso em Vídeo introduz o conceito de estruturas de repetição (laços ou *loops*), especificamente o laço com variável de controle `for`. O foco é aprender a automatizar a execução de blocos de código que precisam se repetir por um número pré-determinado de vezes.
@@ -371,6 +392,7 @@ for c in range(0, 10, 2):
     print(c)  # Exibe na tela: 0, 2, 4, 6, 8
 ```
 
+<a id="aula-14"></a>
 ## Aula #14 - Estrutura de Repetição while
 
 A aula 14 do Curso em Vídeo introduz o conceito de laços de repetição baseados em testes lógicos através da estrutura `while`. O foco é aprender a criar repetições flexíveis, ideais para cenários onde o número exato de iterações é desconhecido no momento da escrita do código.
@@ -394,6 +416,7 @@ while resposta != 'S':
 print('Programa finalizado com sucesso.')
 ```
 
+<a id="aula-15"></a>
 ## Aula #15 - Interrompendo repetições while
 
 A aula 15 encerra o **Mundo 2** e ensina como interromper loops de forma abrupta utilizando estruturas de repetição infinitas. Além disso, introduz a forma mais moderna e utilizada de formatação de strings no Python atual.
@@ -417,6 +440,7 @@ print(f'A soma total dos valores digitados foi {soma}.')
 print(f'Exemplo de formatação monetária: R${soma:.2f}')
 ```
 
+<a id="aula-16"></a>
 ## Aula #16 - Tuplas (Variáveis Compostas)
 
 A aula 16 inicia o **Mundo 3** e introduz o conceito de Variáveis Compostas, começando pelas **Tuplas**. O foco é aprender a gerenciar coleções de dados que permitem armazenar múltiplos valores em uma única variável, respeitando a estrutura de indexação.
@@ -459,6 +483,7 @@ del(lanche)
 print(lanche)  # ❌ Gera erro NameError porque a variável deixou de existir
 ```
 
+<a id="aula-17"></a>
 ## Aula #17 - Listas (Parte 1)
 
 A aula 17 introduz a segunda estrutura de variável composta: as **Listas**. Diferente das tuplas, as listas são a ferramenta ideal para armazenar coleções de dados dinâmicas, pois são totalmente mutáveis e expansíveis.
@@ -514,6 +539,7 @@ lista_copia = lista_original[:]
 lista_copia[0] = 4    # Altera apenas a 'lista_copia'
 ```
 
+<a id="aula-18"></a>
 ## Aula #18 - Listas (Parte 2)
 
 A aula 18 aprofunda o estudo das listas, introduzindo o conceito de **Listas Aninhadas** (listas dentro de listas). A estrutura evolui de uma coleção linear simples para uma organização multidimensional, permitindo modelar matrizes e tabelas complexas de dados.
