@@ -3,9 +3,9 @@ Curso de Python do Curso em Vídeo<br>
 Repositório mostrando como fui desenvolvendo Python.<br> 
 ## Sumário 
 * [Aula #04 - Primeiros Comandos em Python 3](#aula-04)
-<a id="aula-04">
+<a id="aula-04"></a>
 ## Aula #04 - Primeiros Comandos em Python 3
-</a>
+
 A aula 04 do Curso em Vídeo marca o início prático no Python 3, ensinando como interagir com o computador através de scripts reais.
 
 ### Conteúdo Prático:
