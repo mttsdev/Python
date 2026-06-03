@@ -80,6 +80,7 @@ A aula 06 do Curso em Vídeo introduz os conceitos de manipulação de tipos pri
 * **`.isupper()`**: Verifica se todas as letras da string estão em maiúsculas.
 * **`.islower()`**: Verifica se todas as letras da string estão em minúsculas.
 * **`.isspace()`**: Verifica se a string é composta apenas por espaços em branco.
+* **`.istitle()`**: Verifique se a string se a as palavras começam com a letra maiúscula.
 * **`.isprintable()`**: Verifica se a string possui apenas caracteres visíveis que podem ser impressos na tela (ignora quebras de linha como `\n`).
 
 ### Exemplos de Uso
@@ -101,6 +102,7 @@ print('Está totalmente em maiúsculas?', dado.isupper())
 print('Está totalmente em minúsculas?', dado.islower())
 print('É apenas espaço em branco?', dado.isspace())
 print('Pode ser impresso na tela?', dado.isprintable())
+print('Está capitalizado? ', dado.istitle())
 ```
 
 <a id="aula-07"></a>
