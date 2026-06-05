@@ -180,6 +180,10 @@ A aula 08 do Curso em Vídeo ensina como expandir as capacidades nativas do Pyth
 * **`floor()`**: Arredonda um número com ponto flutuante para baixo (chão).
 * **`trunc()`**: Elimina a parte decimal de um número, mantendo apenas a parte inteira (trunca o valor).
 * **`factorial()`**: Calcula o fatorial de um número inteiro.
+* **`math.radians()`**: Transforma o número em radianos.
+* **`math.sin`**: Retorna o número em seno, onde o número deve ser um valor em radianos.
+* **`math.cos`**: Retorna o número em cosseno, onde número deve ser um valor em radianos.
+* **`math.tan`**: Retorna o número em tangente, onde número deve ser um valor em radianos.
 
 #### Módulo `random` (Geração Aleatória)
 * **`random()`**: Gera um número real (float) aleatório entre 0.0 e 1.0.
