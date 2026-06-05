@@ -7,7 +7,7 @@ Repositório mostrando como fui desenvolvendo Python.<br>
 * [Aula #06 - Tipos Primitivos e Saída de Dados](#aula-06)
 * [Aula #07 - Operadores Aritméticos](#aula-07)
 * [Aula #08 - Utilizando Módulos](#aula-08)
-* [Aula 09 - Manipulando Texto](#aula-09)
+* [Aula #09 - Manipulando Texto](#aula-09)
 * [Aula #10 - Condições (Parte 1)](#aula-10)
 * [Aula #11 - Cores no Terminal](#aula-11)
 * [Aula #12 - Condições Aninhadas](#aula-12)
@@ -174,20 +174,28 @@ A aula 08 do Curso em Vídeo ensina como expandir as capacidades nativas do Pyth
 
 ### Novas Bibliotecas e Funções Nativas:
 
-#### Módulo `math` (Matemática Avançada)
+#### Módulo `math`
 * **`sqrt()`**: Calcula a raiz quadrada de um número.
 * **`ceil()`**: Arredonda um número com ponto flutuante para cima (teto).
 * **`floor()`**: Arredonda um número com ponto flutuante para baixo (chão).
 * **`trunc()`**: Elimina a parte decimal de um número, mantendo apenas a parte inteira (trunca o valor).
 * **`factorial()`**: Calcula o fatorial de um número inteiro.
 * **`math.radians()`**: Transforma o número em radianos.
-* **`math.sin`**: Retorna o número em seno, onde o número deve ser um valor em radianos.
-* **`math.cos`**: Retorna o número em cosseno, onde número deve ser um valor em radianos.
-* **`math.tan`**: Retorna o número em tangente, onde número deve ser um valor em radianos.
+* **`math.sin()`**: Retorna o número em seno, onde o número deve ser um valor em radianos.
+* **`math.cos()`**: Retorna o número em cosseno, onde número deve ser um valor em radianos.
+* **`math.tan()`**: Retorna o número em tangente, onde número deve ser um valor em radianos.
 
-#### Módulo `random` (Geração Aleatória)
-* **`random()`**: Gera um número real (float) aleatório entre 0.0 e 1.0.
-* **`randint(x, y)`**: Gera um número inteiro aleatório dentro de um intervalo fechado entre os valores `x` e `y`.
+#### Módulo `random`
+* **`random.random()`**: Gera um número real (float) aleatório entre 0.0 e 1.0.
+* **`random.randint(x, y)`**: Gera um número inteiro aleatório dentro de um intervalo fechado entre os valores `x` e `y`.
+* **`random.choice()`**: Escolhe aleatoriamente algo de uma lista ou conjunto de variáveis.
+* **`random.shuffle()`**: Ordena aleatoriamente a lista ou conjunto de variáveis.
+ 
+#### Módulo `pygame`
+* **`pygame.init()`**: Inicializa todos os módulos do Pygame importados (essencial chamar antes de usar qualquer funcionalidade da biblioteca).
+* **`pygame.mixer.music.load('musica.mp3')`**: Carrega o arquivo de áudio especificado na memória para ser reproduzido.
+* **`pygame.mixer.music.play()`**: Inicia a reprodução da música que foi carregada.
+* **`pygame.event.wait()`**: Bloqueia a execução do seu programa até que qualquer evento (como mover o mouse, apertar uma tecla ou fechar a janela) ocorra.
 
 ### Conceitos Extras:
 * **PyPI (Python Package Index)**: Repositório público e oficial onde a comunidade Python armazena pacotes e bibliotecas de terceiros (exemplificado na aula com a instalação e importação do módulo externo `emoji`).
