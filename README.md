@@ -218,6 +218,7 @@ A aula #09 do Curso em Vídeo ensina como realizar operações avançadas com st
 * **`.count('x')`**: Conta quantas vezes o caractere ou sub-string `'x'` aparece na string.
 * **`.count('x', início, fim)`**: Conta a ocorrência de `'x'` aplicando um fatiamento interno do índice `início` até `fim-1`.
 * **`.find('xyz')`**: Procura pela sub-string `'xyz'` e retorna o índice de onde ela se inicia. Caso não exista na string, retorna `-1`.
+* **`.rfind('xyz')`**: Procura pela sub-string `'xyz'` mais à direita e retorna o índice de onde ela se inicia. Caso não exista na string, retorna `-1`.
 * **`'xyz' in frase`**: Operador lógico que verifica a existência da sub-string `'xyz'` dentro da string, retornando `True` ou `False`.
 
 ### Transformação de String:
@@ -254,6 +255,7 @@ texto_limpo = texto.strip()
 print('Tamanho real:', len(texto_limpo))
 print("Contagem de letras 'o':", texto_limpo.count('o'))
 print("Onde começa 'Vídeo':", texto_limpo.find('Vídeo'))
+print("Letra 'o' mais à direita:", texto_limpo.rfind('o'))
 print("'Python' está presente?", 'Python' in texto_limpo)
 
 # 3. Transformações de texto
