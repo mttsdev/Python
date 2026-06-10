@@ -1,0 +1,7 @@
+nome = input("Digite seu nome: ")
+print(f"Nome em letras maiúsculas: {nome.upper()}")
+print(f"Nome em letras minúsculas: {nome.lower()}")
+nome_sem_espaco = nome.replace(' ', '')
+print(f"Quantidade de letras: {len(nome_sem_espaco)}")
+primeiro_nome = nome.split()
+print(f"Primeiro nome: {primeiro_nome[0]} e tem {len(primeiro_nome[0])} letras")
